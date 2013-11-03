@@ -242,6 +242,10 @@ A next logical step would be to allow users to add pages to a given category. To
 	
 	from rango.forms import PageForm
 	
+	def decode_url(str):
+    	    return str.replace('_', ' ')
+    	    
+ 
 	def add_page(request, category_name_url):
 	    context = RequestContext(request)
 
